@@ -2,10 +2,10 @@
 This is a project portfolio for the home lab I have been building and working on.
 
 
-# Secure Home Lab: Private Cloud & Remote Access
+## Secure Home Lab: Private Cloud & Remote Access
 A documented implementation of a self-hosted infrastructure focusing on data sovereignty and secure remote administration.
 
-## 🛠️ Tech Stack
+### 🛠️ Tech Stack
 * **OS:** Ubuntu 24.04 LTS (Virtual Machines)
 * **Networking:** Tailscale (WireGuard-based Mesh VPN)
 * **Services:** Nextcloud (Private Cloud), RustDesk (Remote Desktop)
