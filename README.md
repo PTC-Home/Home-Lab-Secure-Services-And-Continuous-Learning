@@ -1,51 +1,52 @@
-# Home-Lab-Secure-Services-And-Continuous-Learning
-This is a project portfolio for the home lab I have been building and working on.
-
-
-## Secure Home Lab: Private Cloud & Remote Access
-A documented implementation of a self-hosted infrastructure focusing on data sovereignty and secure remote administration.
-
-### 🛠️ Tech Stack
-* **OS:** Ubuntu 24.04 LTS (Virtual Machines)
-* **Networking:** Tailscale (WireGuard-based Mesh VPN)
-* **Services:** Nextcloud (Private Cloud), RustDesk (Remote Desktop)
-* **Database:** MariaDB
+# 🛡️ Cybersecurity Home Lab & Systems Administration Portfolio
+A collection of live projects focused on infrastructure deployment, secure remote access, and enterprise-grade security monitoring.
 
 ---
 
-## ☁️ Project 1: Nextcloud Deployment
-**Objective:** Replace third-party SaaS providers with a self-hosted, encrypted productivity suite.
+## 🏗️ Project 1: Enterprise SIEM/XDR Deployment (Wazuh)
+**Status:** 🟡 In Progress (Dashboard Live)
+**The Pitch:** "Deploying a centralized security monitoring solution to achieve full visibility into system logs and threat detection."
 
-### 🛡️ Security Implementation
-* **Zero-Trust Access:** Configured the server to listen only on the Tailscale interface. No public ports (80/443) were opened on the router, preventing external brute-force attempts.
-* **Hardened Database:** Implemented a dedicated MariaDB instance with restricted user permissions.
-
-### 🚧 Challenge & Solution
-* **Challenge:** Facing "Access through untrusted domain" errors when connecting via Tailscale.
-* **Solution:** Modified the `config.php` file to include the Tailscale IP and DNS name in the `trusted_domains` array, ensuring the application recognized the secure VPN tunnel.
-
----
-
-## 🖥️ Project 2: Self-Hosted RustDesk Relay
-**Objective:** Establish a private remote support environment to manage home lab nodes without relying on public relay servers.
-
-### 🛡️ Security Implementation
-* **Private Signaling:** Hosted the `hbbs` and `hbbr` services internally, ensuring all remote session metadata stays within my controlled environment.
-* **Encrypted Tunnels:** Used Tailscale to bridge the connection between my laptop and the VM, ensuring end-to-end encryption.
-
-### 🚧 Challenge & Solution
-* **Challenge:** Intermittent connection timeouts during initial setup.
-* **Solution:** Identified that the UFW (Uncomplicated Firewall) on Ubuntu was blocking the specific heartbeat ports. Created a custom UFW rule to allow traffic on ports 21115-21119.
+* **Tech Stack:** Ubuntu 24.04 LTS, Wazuh Manager, Java (JVM), File Integrity Monitoring (FIM).
+* **Key Achievement:** Successfully provisioned the Wazuh Central Manager.
+* **Troubleshooting & AI Collaboration:** * **The Challenge:** Encountered service failures during the initial Indexer boot-up due to default memory constraints.
+    * **The AI Solution:** Collaborated with **Gemini** and **Grok** to interpret Java stack traces and optimize the JVM heap size for a virtualized environment.
+* **Next Steps:** Deploying Wazuh Agents to Windows 11 endpoints and simulating attacks via Kali Linux.
 
 ---
 
-* ## 🤖 Development Methodology: AI-Augmented Troubleshooting
-To accelerate deployment and ensure security best practices, I utilized **Gemini** and **Grok** as virtual engineering partners.
+## ☁️ Project 2: Secure Private Cloud (Nextcloud)
+**Status:** 🟢 Completed
+**The Pitch:** "A self-hosted, hardened productivity suite replacing third-party SaaS with a focus on data sovereignty."
 
-### 🛠️ How AI Was Leveraged:
-* **Architecture Validation:** Consulted AI to verify the security of using Tailscale as an overlay network versus traditional port forwarding.
-* **Rapid Troubleshooting:** Used LLMs to interpret Linux log files (`/var/log/syslog`) and identify specific database permission errors during the Nextcloud setup.
-* **Documentation & Refinement:** Leveraged AI to structure technical documentation and refine Bash scripts for deployment efficiency.
+* **Tech Stack:** Ubuntu, MariaDB, Apache, Tailscale (Mesh VPN).
+* **Security Angle:** Zero-exposure configuration. The server is not reachable via the public internet; access is restricted to a private Tailscale WireGuard tunnel.
+* **Troubleshooting:** Resolved "Untrusted Domain" errors by manually editing `config.php` to recognize Tailscale DNS hostnames.
+
+---
+
+## 🖥️ Project 3: Private Remote Support Relay (RustDesk)
+**Status:** 🟢 Completed
+**The Pitch:** "Implementation of a self-hosted remote desktop solution to facilitate secure cross-platform troubleshooting."
+
+* **Tech Stack:** RustDesk Server (hbbs/hbbr), Ubuntu VM, Tailscale.
+* **Why it matters:** Eliminates reliance on third-party relays, ensuring all session metadata and traffic remain within a privately controlled environment.
+* **Skills Demonstrated:** Linux service management, firewall configuration (UFW), and network tunneling.
+
+---
+
+## 🤖 Methodology: The "AI-Augmented" Engineer
+I leverage **Generative AI (Gemini/Grok)** as a force multiplier in my workflow. 
+* **Rapid Prototyping:** Using LLMs to generate baseline configuration files and Bash scripts.
+* **Log Analysis:** Utilizing AI to parse complex system logs for faster Root Cause Analysis (RCA).
+* **Continuous Learning:** Engaging with AI to deep-dive into the "why" behind networking protocols and security vulnerabilities.
+
+---
+
+## 🛠️ Skills & Certifications
+* **Certifications:** CompTIA A+, Network+, Security+
+* **Education:** Cybersecurity Student at Columbus State University
+* **Background:** Former Welder transitioning into Systems Administration.
 
 ### 💡 Why This Matters:
 This project demonstrates my ability to integrate **Generative AI** into the DevOps workflow, using it to solve complex configuration issues and reduce "time-to-solution" while maintaining a deep understanding of the underlying systems.
