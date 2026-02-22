@@ -5,6 +5,7 @@ A collection of live projects focused on infrastructure deployment, secure remot
 
 ## 🏗️ Project 1: Enterprise SIEM/XDR Deployment (Wazuh)
 **Status:** 🟡 In Progress (Dashboard Live)
+
 **The Pitch:** "Deploying a centralized security monitoring solution to achieve full visibility into system logs and threat detection."
 
 * **Tech Stack:** Ubuntu 24.04 LTS, Wazuh Manager, Java (JVM), File Integrity Monitoring (FIM).
@@ -17,6 +18,7 @@ A collection of live projects focused on infrastructure deployment, secure remot
 
 ## ☁️ Project 2: Secure Private Cloud (Nextcloud)
 **Status:** 🟢 Completed
+
 **The Pitch:** "A self-hosted, hardened productivity suite replacing third-party SaaS with a focus on data sovereignty."
 
 * **Tech Stack:** Ubuntu, MariaDB, Apache, Tailscale (Mesh VPN).
@@ -27,6 +29,7 @@ A collection of live projects focused on infrastructure deployment, secure remot
 
 ## 🖥️ Project 3: Private Remote Support Relay (RustDesk)
 **Status:** 🟢 Completed
+
 **The Pitch:** "Implementation of a self-hosted remote desktop solution to facilitate secure cross-platform troubleshooting."
 
 * **Tech Stack:** RustDesk Server (hbbs/hbbr), Ubuntu VM, Tailscale.
