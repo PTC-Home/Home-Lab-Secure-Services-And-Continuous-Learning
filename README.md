@@ -8,10 +8,11 @@ A collection of live projects focused on infrastructure deployment, secure remot
 
 **The Pitch:** "Deploying a centralized security monitoring solution to achieve full visibility into system logs and threat detection."
 
-* **Tech Stack:** Ubuntu 24.04 LTS, Wazuh Manager, Java (JVM), File Integrity Monitoring (FIM).
+* **Tech Stack:** Ubuntu 24.04 LTS, Wazuh Manager, Java (JVM), File Integrity Monitoring (FIM), Ubuntu 24.04 LTS target, Kali Linux attacker.
 * **Key Achievement:** Successfully provisioned the Wazuh Central Manager.
 * **Troubleshooting & AI Collaboration:** * **The Challenge:** Encountered service failures during the initial Indexer boot-up due to default memory constraints.
     * **The AI Solution:** Collaborated with **Gemini** and **Grok** to interpret Java stack traces and optimize the JVM heap size for a virtualized environment.
+* **
 * **Next Steps:** Deploying Wazuh Agents to Windows 11 endpoints and simulating attacks via Kali Linux.
 
 ---
