@@ -48,9 +48,9 @@ I leverage **Generative AI (Gemini/Grok)** as a force multiplier in my workflow.
 ---
 
 ## 🛠️ Skills & Certifications
-* **Certifications:** CompTIA A+, Network+, Security+
+* **Certifications:** Tech +,CompTIA A+, Network+, Security+
 * **Education:** Cybersecurity Student at Columbus State University
-* **Background:** Former Welder transitioning into Systems Administration.
+* **Background:** Former Welder transitioning into Systems Administration starting as SOC analyist
 
 ### 💡 Why This Matters:
 This project demonstrates my ability to integrate **Generative AI** into the DevOps workflow, using it to solve complex configuration issues and reduce "time-to-solution" while maintaining a deep understanding of the underlying systems.
